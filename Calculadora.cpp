@@ -18,6 +18,7 @@ int main (){
 		cin.ignore();
 		cout << "O resultado da soma é: " << num1 + num2;
 	break;
+		
 	case 2:
 		cout << "Primeiro número: \n";
 		cin >> num1;
@@ -27,6 +28,7 @@ int main (){
 		cin.ignore();
 		cout << "o resultado da subtração é: " << num1 - num2;
 	break;
+		
 	case 3:
 		cout << "Primeiro número: \n";
 		cin >> num1;
@@ -36,6 +38,7 @@ int main (){
 		cin.ignore();
 		cout << "O resultado da multiplicação é: " << num1 * num2;
 	break;
+		
 	case 4:
 		do{
 		cout << "Primeiro número : \n";
@@ -44,16 +47,18 @@ int main (){
 		cout << "Segundo número: ";
 		cin >> num2;
 		cin.ignore();
+		
 		if(num2 != 0){
 			cout << "O resultado da divisão: " << num1 / num2;
 		}else{
 			cout << "Nenhum número é divisível por 0. \nTente novamente.\n \n";
 		}
 		}while(num2 == 0);
-			break;
+	break;
+		
 	default:
 		cout << "Ocorreu um erro. Tente novamente. \n";
-		break;
+	break;
 		}
 	}while(escolha > 4);
     return 0;
